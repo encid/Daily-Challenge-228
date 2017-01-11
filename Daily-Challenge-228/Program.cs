@@ -11,7 +11,7 @@ namespace DailyChallenge228
                                               "bijoux", "abhors", "fiddle", "begins", "chimps", "wronged" };
 
             foreach (var item in inputList) {
-                Console.WriteLine(IsOrdered("sponged"));
+                Console.WriteLine(IsOrdered(item));
             }            
 
             Console.ReadKey();            

@@ -33,15 +33,15 @@ namespace DailyChallenge228
             if (notOrdered == true) {
                 for (int i = input.Length - 1; i > 0; i--) {    // iterate backwards from end of word
                     if (input[i] > input[i - 1]) {     // if any char is higher than the one before it, string is not in order or reverse order
-                        return string.Format("{0} NOT IN ORDER", input); 
+                        return $"{input} NOT IN ORDER"; 
                     }
                 }
 
                 // if code gets through the for loop, it's in reverse order
-                return string.Format("{0} REVERSE ORDER", input);
+                return $"{input} IN REVERSE ORDER";
             }
 
-            return string.Format("{0} IN ORDER", input);
+            return $"{input} IN ORDER";
         }
     }
 }
